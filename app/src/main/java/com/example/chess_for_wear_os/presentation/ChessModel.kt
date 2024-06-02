@@ -1,4 +1,5 @@
-package com.example.chess.presentation
+package com.example.chess_for_wear_os.presentation
+
 class ChessModel {
     override fun toString(): String {
         var desc = ""

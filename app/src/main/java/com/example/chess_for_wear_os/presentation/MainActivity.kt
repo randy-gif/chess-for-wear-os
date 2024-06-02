@@ -25,7 +25,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
 import androidx.wear.compose.material.TimeText
-import com.example.chess.presentation.ChessModel
 import com.example.chess_for_wear_os.R
 import com.example.chess_for_wear_os.presentation.theme.ChessforwearosTheme
 private const val TAG = "MainActivity"
