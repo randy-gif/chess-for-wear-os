@@ -1,4 +1,4 @@
-
+package com.example.chess.presentation
 class ChessModel {
     override fun toString(): String {
         var desc = ""

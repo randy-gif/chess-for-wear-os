@@ -7,6 +7,7 @@
 package com.example.chess_for_wear_os.presentation
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -24,10 +25,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
 import androidx.wear.compose.material.TimeText
+import com.example.chess.presentation.ChessModel
 import com.example.chess_for_wear_os.R
 import com.example.chess_for_wear_os.presentation.theme.ChessforwearosTheme
-
+private const val TAG = "MainActivity"
 class MainActivity : ComponentActivity() {
+    var chessModel = ChessModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
 
@@ -38,6 +41,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             WearApp("Android")
         }
+        Log.d(TAG, "$chessModel")
     }
 }
 
